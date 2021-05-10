@@ -14,7 +14,6 @@ class UserAdmin(BaseUserAdmin):
             None,
             {'fields': ('email', 'password')}
         ),
-
         (
             _('Personal Info'),
             {'fields': ('name',)}
