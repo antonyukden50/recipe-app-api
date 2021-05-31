@@ -5,6 +5,7 @@ ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
 
+RUN addgroup -S codebe && adduser -S codebe -G codebe
 
 # install psycopg2 dependencies
 RUN apk update \
